@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT Square - The Next Generation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="container-xl p-0">
+                <div class="header-container">
+                    <img src="https://nft-square.io/static/media/arrow-left-icon.05a0e83b804c8a55208fe469ced471e7.svg"
+                        alt="" class="header-container-backBtn" />
+                    <div class="header-container-left">
+                        <img src="https://nft-square.io/static/media/logo.b43dba9ef86b7ddaf8fc.png" alt=""
+                            class="header-container-left-logo" />
+                    </div>
+                    <div class="header-container-right">
+                        <div class="header-container-right-title">
+                            NFT Utilities Shopping Mall
+                        </div>
+                        <div class="header-container-right-button">
+                            <button class="header-container-right-button-signIn">
+                                Sign In
+                            </button>
+                        </div>
+                        <img src="https://nft-square.io/static/media/filter-utility.ccd5e9db14d32106c64e39d77b938b86.svg"
+                            alt="" class="header-container-right-sidebarBtn" onclick="openNav()" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main" id="main">
+        <div class="container-xl p-0">
+            <div class="main-container">
+                <div class="main-container-sideNav" id="sideNav">
+                    <a href="javascript:void(0)" class="main-container-sideNav-closeBtn"
+                        onclick="closeNav()">&times;</a>
+                    <div class="main-container-content-sidebar">
+                        <div class="main-container-content-sidebar-arrival">
+                            <p class="main-container-content-sidebar-arrival-title">
+                                New Arrivals
+                            </p>
+                            <div class="main-container-content-sidebar-arrival-category">
+                                <div class="main-container-content-sidebar-arrival-category-first">
+                                    <img src="https://api.nft-square.io/files/ecommerce/13122d61be0f4abc8c0c33ef9078a0f8iconweb3immersivebox.png"
+                                        alt="" class="main-container-content-sidebar-arrival-category-first-img" />
+                                    <p class="main-container-content-sidebar-arrival-category-first-name">
+                                        Web3 Immersive Box
+                                    </p>
+                                </div>
+                                <div class="main-container-content-sidebar-arrival-category-second">
+                                    <img src="https://api.nft-square.io/files/ecommerce/19a39583cb52428782a41aa49d91858eiconboxnft.png"
+                                        alt="" class="main-container-content-sidebar-arrival-category-second-img" />
+                                    <p class="main-container-content-sidebar-arrival-category-second-name">
+                                        NFT Box
+                                    </p>
+                                </div>
+                                <div class="main-container-content-sidebar-arrival-category-third">
+                                    <img src="https://api.nft-square.io/files/ecommerce/ad15a775864041f58f91c5663c0c3f29Genesis%20Membership.jpg"
+                                        alt="" class="main-container-content-sidebar-arrival-category-third-img" />
+                                    <p class="main-container-content-sidebar-arrival-category-third-name">
+                                        Genesis Membership
+                                    </p>
+                                </div>
+                                <div class="main-container-content-sidebar-arrival-category-fourth">
+                                    <img src="https://api.nft-square.io/files/ecommerce/f901af582c0f4155acadda856a9f82ddNew%20arrival%20Welcome%20NFT%20Square%20resize.jpg"
+                                        alt="" class="main-container-content-sidebar-arrival-category-fourth-img" />
+                                    <p class="main-container-content-sidebar-arrival-category-fourth-name">
+                                        Welcome NFT Square
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main-container-content-sidebar-shopProduct">
+                            <p class="main-container-content-sidebar-shopProduct-title">
+                                Shop By Product Line
+                            </p>
+                            <div class="main-container-content-sidebar-shopProduct-category">
+                                <div class="main-container-content-sidebar-shopProduct-category-first">
+                                    <img src="https://api.nft-square.io/files/ecommerce/03bafc61b1874f86b60fa15c62a82528Mystery%20box%20resize%2017.jpg"
+                                        alt="" class="main-container-content-sidebar-shopProduct-category-first-img" />
+                                    <p class="main-container-content-sidebar-shopProduct-category-first-name">
+                                        NFT Box
+                                    </p>
+                                </div>
+                                <div class="main-container-content-sidebar-shopProduct-category-second">
+                                    <img src="https://api.nft-square.io/files/ecommerce/e1f7a61d67c74022b6d783f62d7eb29cdigital%20collectible%20resize%2018.jpg"
+                                        alt="" class="main-container-content-sidebar-shopProduct-category-second-img" />
+                                    <p class="main-container-content-sidebar-shopProduct-category-second-name">
+                                        Digital Collectibles
+                                    </p>
+                                </div>
+                                <div class="main-container-content-sidebar-shopProduct-category-third">
+                                    <img src="https://api.nft-square.io/files/ecommerce/17be43d7e7e94fc6bc01222b1c2b9e99prediction%20resize%2016.jpg"
+                                        alt="" class="main-container-content-sidebar-shopProduct-category-third-img" />
+                                    <p class="main-container-content-sidebar-shopProduct-category-third-name">
+                                        Prediction
+                                    </p>
+                                </div>
+                                <div class="main-container-content-sidebar-shopProduct-category-fourth">
+                                    <img src="https://api.nft-square.io/files/ecommerce/ca17334907a548b5b576ab9030e7e232token%20gate%20resize%2020.jpg"
+                                        alt="" class="main-container-content-sidebar-shopProduct-category-fourth-img" />
+                                    <p class="main-container-content-sidebar-shopProduct-category-fourth-name">
+                                        Token Gated
+                                    </p>
+                                </div>
+                                <div class="main-container-content-sidebar-shopProduct-category-fifth">
+                                    <img src="https://api.nft-square.io/files/ecommerce/6964c96c6c454e879e058def32fc87b3investment%20resize%2019.jpg"
+                                        alt="" class="main-container-content-sidebar-shopProduct-category-fifth-img" />
+                                    <p class="main-container-content-sidebar-shopProduct-category-fifth-name">
+                                        Investment
+                                    </p>
+                                </div>
+                                <div class="main-container-content-sidebar-shopProduct-category-sixth">
+                                    <img src="https://api.nft-square.io/files/ecommerce/89c91300e1284afbb74e958563e35ffcdonation%20resize%2021.jpg"
+                                        alt="" class="main-container-content-sidebar-shopProduct-category-sixth-img" />
+                                    <p class="main-container-content-sidebar-shopProduct-category-sixth-name">
+                                        Donation
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main-container-content-sidebar-shopIndustry">
+                            <p class="main-container-content-sidebar-shopIndustry-title">
+                                Shop by Industry
+                            </p>
+                            <div class="main-container-content-sidebar-shopIndustry-category">
+                                <div class="main-container-content-sidebar-shopIndustry-category-first">
+                                    <img src="https://api.nft-square.io/files/ecommerce/e976b36dd2a8407da391446c1d781eb0iconcrowdfunding.png"
+                                        alt="" class="main-container-content-sidebar-shopIndustry-category-first-img" />
+                                    <p class="main-container-content-sidebar-shopIndustry-category-first-name">
+                                        Crowdfunding
+                                    </p>
+                                </div>
+                                <div class="main-container-content-sidebar-shopIndustry-category-second">
+                                    <img src="https://api.nft-square.io/files/ecommerce/ecc1161ff55e47cabe89f8c430c092a3iconmarketer.png"
+                                        alt=""
+                                        class="main-container-content-sidebar-shopIndustry-category-second-img" />
+                                    <p class="main-container-content-sidebar-shopIndustry-category-second-name">
+                                        Marketing
+                                    </p>
+                                </div>
+                                <div class="main-container-content-sidebar-shopIndustry-category-third">
+                                    <img src="https://api.nft-square.io/files/ecommerce/770ce0651d914a8186d19bcd8be95e2eiconfashion.png"
+                                        alt="" class="main-container-content-sidebar-shopIndustry-category-third-img" />
+                                    <p class="main-container-content-sidebar-shopIndustry-category-third-name">
+                                        Fashion
+                                    </p>
+                                </div>
+                                <div class="main-container-content-sidebar-shopIndustry-category-fourth">
+                                    <img src="https://api.nft-square.io/files/ecommerce/e2979292fdb54dae8a93ac4cbd0fec80icontravel.png"
+                                        alt=""
+                                        class="main-container-content-sidebar-shopIndustry-category-fourth-img" />
+                                    <p class="main-container-content-sidebar-shopIndustry-category-fourth-name">
+                                        Travel
+                                    </p>
+                                </div>
+                                <div class="main-container-content-sidebar-shopIndustry-category-fifth">
+                                    <img src="https://api.nft-square.io/files/ecommerce/46ed159910454421a4d88067bb3bedcdiconentertainment.png"
+                                        alt="" class="main-container-content-sidebar-shopIndustry-category-fifth-img" />
+                                    <p class="main-container-content-sidebar-shopIndustry-category-fifth-name">
+                                        Entertainment
+                                    </p>
+                                </div>
+                                <div class="main-container-content-sidebar-shopIndustry-category-sixth">
+                                    <img src="https://api.nft-square.io/files/ecommerce/abe08e557a304247908d98e6b7c732a8iconsocial.png"
+                                        alt="" class="main-container-content-sidebar-shopIndustry-category-sixth-img" />
+                                    <p class="main-container-content-sidebar-shopIndustry-category-sixth-name">
+                                        Social
+                                    </p>
+                                </div>
+                                <div class="main-container-content-sidebar-shopIndustry-category-seventh">
+                                    <img src="https://api.nft-square.io/files/ecommerce/5a1cdaaee19c480389191f92f4b175a1iconsport.png"
+                                        alt=""
+                                        class="main-container-content-sidebar-shopIndustry-category-seventh-img" />
+                                    <p class="main-container-content-sidebar-shopIndustry-category-seventh-name">
+                                        Sport
+                                    </p>
+                                </div>
+                                <div class="main-container-content-sidebar-shopIndustry-category-eighth">
+                                    <img src="https://api.nft-square.io/files/ecommerce/5d30f6dcc3224ec9b6f4113a2561e10eiconf&b.png"
+                                        alt=""
+                                        class="main-container-content-sidebar-shopIndustry-category-eighth-img" />
+                                    <p class="main-container-content-sidebar-shopIndustry-category-eighth-name">
+                                        F&B
+                                    </p>
+                                </div>
+                                <div class="main-container-content-sidebar-shopIndustry-category-ninth">
+                                    <img src="https://api.nft-square.io/files/ecommerce/37362b705c0740008abeaede97b613b4iconretail.png"
+                                        alt="" class="main-container-content-sidebar-shopIndustry-category-ninth-img" />
+                                    <p class="main-container-content-sidebar-shopIndustry-category-ninth-name">
+                                        Retail
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main-container-content-sidebar-shopCountry">
+                            <p class="main-container-content-sidebar-shopCountry-title">
+                                Shop by Country
+                            </p>
+                            <div class="main-container-content-sidebar-shopCountry-category">
+                                <div class="main-container-content-sidebar-shopCountry-category-first">
+                                    <img src="https://api.nft-square.io/files/ecommerce/6288ece1818f4f96a8b0c195449591b4Country.png"
+                                        alt="" class="main-container-content-sidebar-shopCountry-category-first-img" />
+                                    <p class="main-container-content-sidebar-shopCountry-category-first-name">
+                                        France
+                                    </p>
+                                </div>
+                                <div class="main-container-content-sidebar-shopCountry-category-second">
+                                    <img src="https://api.nft-square.io/files/ecommerce/9d3b37389c744998b1f018863101cfc8india.svg"
+                                        alt="" class="main-container-content-sidebar-shopCountry-category-second-img" />
+                                    <p class="main-container-content-sidebar-shopCountry-category-second-name">
+                                        India
+                                    </p>
+                                </div>
+                                <div class="main-container-content-sidebar-shopCountry-category-third">
+                                    <img src="
+                                https://api.nft-square.io/files/ecommerce/e4c5ef25cfb4451a9786d9c8c4f17398united%20states%20of%20america.svg"
+                                        alt="" class="main-container-content-sidebar-shopCountry-category-third-img" />
+                                    <p class="main-container-content-sidebar-shopCountry-category-third-name">
+                                        United States
+                                    </p>
+                                </div>
+                                <div class="main-container-content-sidebar-shopCountry-category-fourth">
+                                    <img src="https://api.nft-square.io/files/ecommerce/facc646869254174882d61e815094ad4turkey.svg"
+                                        alt="" class="main-container-content-sidebar-shopCountry-category-fourth-img" />
+                                    <p class="main-container-content-sidebar-shopCountry-category-fourth-name">
+                                        Turkey
+                                    </p>
+                                </div>
+                                <div class="main-container-content-sidebar-shopCountry-category-fifth">
+                                    <img src="https://api.nft-square.io/files/ecommerce/2c0698baf3274a0796d73edba0a3fb9bsingapore.svg"
+                                        alt="" class="main-container-content-sidebar-shopCountry-category-fifth-img" />
+                                    <p class="main-container-content-sidebar-shopCountry-category-fifth-name">
+                                        Singapore
+                                    </p>
+                                </div>
+                                <div class="main-container-content-sidebar-shopCountry-category-sixth">
+                                    <img src="https://api.nft-square.io/files/ecommerce/11de81b719c0478e89fd1960b6d0e827philippines.svg"
+                                        alt="" class="main-container-content-sidebar-shopCountry-category-sixth-img" />
+                                    <p class="main-container-content-sidebar-shopCountry-category-sixth-name">
+                                        Philippines
+                                    </p>
+                                </div>
+                                <div class="main-container-content-sidebar-shopCountry-category-seventh">
+                                    <img src="https://api.nft-square.io/files/ecommerce/08514335437a45efa8cad6434fcbbf5bjapan.svg"
+                                        alt=""
+                                        class="main-container-content-sidebar-shopCountry-category-seventh-img" />
+                                    <p class="main-container-content-sidebar-shopCountry-category-seventh-name">
+                                        Japan
+                                    </p>
+                                </div>
+                                <div class="main-container-content-sidebar-shopCountry-category-eighth">
+                                    <img src="https://api.nft-square.io/files/ecommerce/d1999d99bf8049d89f4458e08da5af39id.svg"
+                                        alt="" class="main-container-content-sidebar-shopCountry-category-eighth-img" />
+                                    <p class="main-container-content-sidebar-shopCountry-category-eighth-name">
+                                        Indonesia
+                                    </p>
+                                </div>
+                                <div class="main-container-content-sidebar-shopCountry-category-ninth">
+                                    <img src="https://api.nft-square.io/files/ecommerce/7a1a2d29dd1e430f9e7ad0bd1408538evietnam.svg"
+                                        alt="" class="main-container-content-sidebar-shopCountry-category-ninth-img" />
+                                    <p class="main-container-content-sidebar-shopCountry-category-ninth-name">
+                                        Vietnam
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-container-title">
+                    <div class="main-container-title-home">Home</div>
+                    <div class="main-container-title-character">/</div>
+                    <div class="main-container-title-allProduct">All Product</div>
+                </div>
+
+                <div class="main-container-content">
+                    <div class="row">
+                        <div class="d-lg-none d-md-none d-sm-none d-none d-xl-block col-xl-3 col-lg-0">
+                            <div class="main-container-content-sidebar">
+                                <div class="main-container-content-sidebar-arrival">
+                                    <p class="main-container-content-sidebar-arrival-title">
+                                        New Arrivals
+                                    </p>
+                                    <div class="main-container-content-sidebar-arrival-category">
+                                        <div class="main-container-content-sidebar-arrival-category-first">
+                                            <img src="https://api.nft-square.io/files/ecommerce/13122d61be0f4abc8c0c33ef9078a0f8iconweb3immersivebox.png"
+                                                alt=""
+                                                class="main-container-content-sidebar-arrival-category-first-img" />
+                                            <p class="main-container-content-sidebar-arrival-category-first-name">
+                                                Web3 Immersive Box
+                                            </p>
+                                        </div>
+                                        <div class="main-container-content-sidebar-arrival-category-second">
+                                            <img src="https://api.nft-square.io/files/ecommerce/19a39583cb52428782a41aa49d91858eiconboxnft.png"
+                                                alt=""
+                                                class="main-container-content-sidebar-arrival-category-second-img" />
+                                            <p class="main-container-content-sidebar-arrival-category-second-name">
+                                                NFT Box
+                                            </p>
+                                        </div>
+                                        <div class="main-container-content-sidebar-arrival-category-third">
+                                            <img src="https://api.nft-square.io/files/ecommerce/ad15a775864041f58f91c5663c0c3f29Genesis%20Membership.jpg"
+                                                alt=""
+                                                class="main-container-content-sidebar-arrival-category-third-img" />
+                                            <p class="main-container-content-sidebar-arrival-category-third-name">
+                                                Genesis Membership
+                                            </p>
+                                        </div>
+                                        <div class="main-container-content-sidebar-arrival-category-fourth">
+                                            <img src="https://api.nft-square.io/files/ecommerce/f901af582c0f4155acadda856a9f82ddNew%20arrival%20Welcome%20NFT%20Square%20resize.jpg"
+                                                alt=""
+                                                class="main-container-content-sidebar-arrival-category-fourth-img" />
+                                            <p class="main-container-content-sidebar-arrival-category-fourth-name">
+                                                Welcome NFT Square
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-container-content-sidebar-shopProduct">
+                                    <p class="main-container-content-sidebar-shopProduct-title">
+                                        Shop By Product Line
+                                    </p>
+                                    <div class="main-container-content-sidebar-shopProduct-category">
+                                        <div class="main-container-content-sidebar-shopProduct-category-first">
+                                            <img src="https://api.nft-square.io/files/ecommerce/03bafc61b1874f86b60fa15c62a82528Mystery%20box%20resize%2017.jpg"
+                                                alt=""
+                                                class="main-container-content-sidebar-shopProduct-category-first-img" />
+                                            <p class="main-container-content-sidebar-shopProduct-category-first-name">
+                                                NFT Box
+                                            </p>
+                                        </div>
+                                        <div class="main-container-content-sidebar-shopProduct-category-second">
+                                            <img src="https://api.nft-square.io/files/ecommerce/e1f7a61d67c74022b6d783f62d7eb29cdigital%20collectible%20resize%2018.jpg"
+                                                alt=""
+                                                class="main-container-content-sidebar-shopProduct-category-second-img" />
+                                            <p class="main-container-content-sidebar-shopProduct-category-second-name">
+                                                Digital Collectibles
+                                            </p>
+                                        </div>
+                                        <div class="main-container-content-sidebar-shopProduct-category-third">
+                                            <img src="https://api.nft-square.io/files/ecommerce/17be43d7e7e94fc6bc01222b1c2b9e99prediction%20resize%2016.jpg"
+                                                alt=""
+                                                class="main-container-content-sidebar-shopProduct-category-third-img" />
+                                            <p class="main-container-content-sidebar-shopProduct-category-third-name">
+                                                Prediction
+                                            </p>
+                                        </div>
+                                        <div class="main-container-content-sidebar-shopProduct-category-fourth">
+                                            <img src="https://api.nft-square.io/files/ecommerce/ca17334907a548b5b576ab9030e7e232token%20gate%20resize%2020.jpg"
+                                                alt=""
+                                                class="main-container-content-sidebar-shopProduct-category-fourth-img" />
+                                            <p class="main-container-content-sidebar-shopProduct-category-fourth-name">
+                                                Token Gated
+                                            </p>
+                                        </div>
+                                        <div class="main-container-content-sidebar-shopProduct-category-fifth">
+                                            <img src="https://api.nft-square.io/files/ecommerce/6964c96c6c454e879e058def32fc87b3investment%20resize%2019.jpg"
+                                                alt=""
+                                                class="main-container-content-sidebar-shopProduct-category-fifth-img" />
+                                            <p class="main-container-content-sidebar-shopProduct-category-fifth-name">
+                                                Investment
+                                            </p>
+                                        </div>
+                                        <div class="main-container-content-sidebar-shopProduct-category-sixth">
+                                            <img src="https://api.nft-square.io/files/ecommerce/89c91300e1284afbb74e958563e35ffcdonation%20resize%2021.jpg"
+                                                alt=""
+                                                class="main-container-content-sidebar-shopProduct-category-sixth-img" />
+                                            <p class="main-container-content-sidebar-shopProduct-category-sixth-name">
+                                                Donation
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-container-content-sidebar-shopIndustry">
+                                    <p class="main-container-content-sidebar-shopIndustry-title">
+                                        Shop by Industry
+                                    </p>
+                                    <div class="main-container-content-sidebar-shopIndustry-category">
+                                        <div class="main-container-content-sidebar-shopIndustry-category-first">
+                                            <img src="https://api.nft-square.io/files/ecommerce/e976b36dd2a8407da391446c1d781eb0iconcrowdfunding.png"
+                                                alt=""
+                                                class="main-container-content-sidebar-shopIndustry-category-first-img" />
+                                            <p class="main-container-content-sidebar-shopIndustry-category-first-name">
+                                                Crowdfunding
+                                            </p>
+                                        </div>
+                                        <div class="main-container-content-sidebar-shopIndustry-category-second">
+                                            <img src="https://api.nft-square.io/files/ecommerce/ecc1161ff55e47cabe89f8c430c092a3iconmarketer.png"
+                                                alt=""
+                                                class="main-container-content-sidebar-shopIndustry-category-second-img" />
+                                            <p class="main-container-content-sidebar-shopIndustry-category-second-name">
+                                                Marketing
+                                            </p>
+                                        </div>
+                                        <div class="main-container-content-sidebar-shopIndustry-category-third">
+                                            <img src="https://api.nft-square.io/files/ecommerce/770ce0651d914a8186d19bcd8be95e2eiconfashion.png"
+                                                alt=""
+                                                class="main-container-content-sidebar-shopIndustry-category-third-img" />
+                                            <p class="main-container-content-sidebar-shopIndustry-category-third-name">
+                                                Fashion
+                                            </p>
+                                        </div>
+                                        <div class="main-container-content-sidebar-shopIndustry-category-fourth">
+                                            <img src="https://api.nft-square.io/files/ecommerce/e2979292fdb54dae8a93ac4cbd0fec80icontravel.png"
+                                                alt=""
+                                                class="main-container-content-sidebar-shopIndustry-category-fourth-img" />
+                                            <p class="main-container-content-sidebar-shopIndustry-category-fourth-name">
+                                                Travel
+                                            </p>
+                                        </div>
+                                        <div class="main-container-content-sidebar-shopIndustry-category-fifth">
+                                            <img src="https://api.nft-square.io/files/ecommerce/46ed159910454421a4d88067bb3bedcdiconentertainment.png"
+                                                alt=""
+                                                class="main-container-content-sidebar-shopIndustry-category-fifth-img" />
+                                            <p class="main-container-content-sidebar-shopIndustry-category-fifth-name">
+                                                Entertainment
+                                            </p>
+                                        </div>
+                                        <div class="main-container-content-sidebar-shopIndustry-category-sixth">
+                                            <img src="https://api.nft-square.io/files/ecommerce/abe08e557a304247908d98e6b7c732a8iconsocial.png"
+                                                alt=""
+                                                class="main-container-content-sidebar-shopIndustry-category-sixth-img" />
+                                            <p class="main-container-content-sidebar-shopIndustry-category-sixth-name">
+                                                Social
+                                            </p>
+                                        </div>
+                                        <div class="main-container-content-sidebar-shopIndustry-category-seventh">
+                                            <img src="https://api.nft-square.io/files/ecommerce/5a1cdaaee19c480389191f92f4b175a1iconsport.png"
+                                                alt=""
+                                                class="main-container-content-sidebar-shopIndustry-category-seventh-img" />
+                                            <p
+                                                class="main-container-content-sidebar-shopIndustry-category-seventh-name">
+                                                Sport
+                                            </p>
+                                        </div>
+                                        <div class="main-container-content-sidebar-shopIndustry-category-eighth">
+                                            <img src="https://api.nft-square.io/files/ecommerce/5d30f6dcc3224ec9b6f4113a2561e10eiconf&b.png"
+                                                alt=""
+                                                class="main-container-content-sidebar-shopIndustry-category-eighth-img" />
+                                            <p class="main-container-content-sidebar-shopIndustry-category-eighth-name">
+                                                F&B
+                                            </p>
+                                        </div>
+                                        <div class="main-container-content-sidebar-shopIndustry-category-ninth">
+                                            <img src="https://api.nft-square.io/files/ecommerce/37362b705c0740008abeaede97b613b4iconretail.png"
+                                                alt=""
+                                                class="main-container-content-sidebar-shopIndustry-category-ninth-img" />
+                                            <p class="main-container-content-sidebar-shopIndustry-category-ninth-name">
+                                                Retail
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-container-content-sidebar-shopCountry">
+                                    <p class="main-container-content-sidebar-shopCountry-title">
+                                        Shop by Country
+                                    </p>
+                                    <div class="main-container-content-sidebar-shopCountry-category">
+                                        <div class="main-container-content-sidebar-shopCountry-category-first">
+                                            <img src="https://api.nft-square.io/files/ecommerce/6288ece1818f4f96a8b0c195449591b4Country.png"
+                                                alt=""
+                                                class="main-container-content-sidebar-shopCountry-category-first-img" />
+                                            <p class="main-container-content-sidebar-shopCountry-category-first-name">
+                                                France
+                                            </p>
+                                        </div>
+                                        <div class="main-container-content-sidebar-shopCountry-category-second">
+                                            <img src="https://api.nft-square.io/files/ecommerce/9d3b37389c744998b1f018863101cfc8india.svg"
+                                                alt=""
+                                                class="main-container-content-sidebar-shopCountry-category-second-img" />
+                                            <p class="main-container-content-sidebar-shopCountry-category-second-name">
+                                                India
+                                            </p>
+                                        </div>
+                                        <div class="main-container-content-sidebar-shopCountry-category-third">
+                                            <img src="
+                                        https://api.nft-square.io/files/ecommerce/e4c5ef25cfb4451a9786d9c8c4f17398united%20states%20of%20america.svg"
+                                                alt=""
+                                                class="main-container-content-sidebar-shopCountry-category-third-img" />
+                                            <p class="main-container-content-sidebar-shopCountry-category-third-name">
+                                                United States
+                                            </p>
+                                        </div>
+                                        <div class="main-container-content-sidebar-shopCountry-category-fourth">
+                                            <img src="https://api.nft-square.io/files/ecommerce/facc646869254174882d61e815094ad4turkey.svg"
+                                                alt=""
+                                                class="main-container-content-sidebar-shopCountry-category-fourth-img" />
+                                            <p class="main-container-content-sidebar-shopCountry-category-fourth-name">
+                                                Turkey
+                                            </p>
+                                        </div>
+                                        <div class="main-container-content-sidebar-shopCountry-category-fifth">
+                                            <img src="https://api.nft-square.io/files/ecommerce/2c0698baf3274a0796d73edba0a3fb9bsingapore.svg"
+                                                alt=""
+                                                class="main-container-content-sidebar-shopCountry-category-fifth-img" />
+                                            <p class="main-container-content-sidebar-shopCountry-category-fifth-name">
+                                                Singapore
+                                            </p>
+                                        </div>
+                                        <div class="main-container-content-sidebar-shopCountry-category-sixth">
+                                            <img src="https://api.nft-square.io/files/ecommerce/11de81b719c0478e89fd1960b6d0e827philippines.svg"
+                                                alt=""
+                                                class="main-container-content-sidebar-shopCountry-category-sixth-img" />
+                                            <p class="main-container-content-sidebar-shopCountry-category-sixth-name">
+                                                Philippines
+                                            </p>
+                                        </div>
+                                        <div class="main-container-content-sidebar-shopCountry-category-seventh">
+                                            <img src="https://api.nft-square.io/files/ecommerce/08514335437a45efa8cad6434fcbbf5bjapan.svg"
+                                                alt=""
+                                                class="main-container-content-sidebar-shopCountry-category-seventh-img" />
+                                            <p class="main-container-content-sidebar-shopCountry-category-seventh-name">
+                                                Japan
+                                            </p>
+                                        </div>
+                                        <div class="main-container-content-sidebar-shopCountry-category-eighth">
+                                            <img src="https://api.nft-square.io/files/ecommerce/d1999d99bf8049d89f4458e08da5af39id.svg"
+                                                alt=""
+                                                class="main-container-content-sidebar-shopCountry-category-eighth-img" />
+                                            <p class="main-container-content-sidebar-shopCountry-category-eighth-name">
+                                                Indonesia
+                                            </p>
+                                        </div>
+                                        <div class="main-container-content-sidebar-shopCountry-category-ninth">
+                                            <img src="https://api.nft-square.io/files/ecommerce/7a1a2d29dd1e430f9e7ad0bd1408538evietnam.svg"
+                                                alt=""
+                                                class="main-container-content-sidebar-shopCountry-category-ninth-img" />
+                                            <p class="main-container-content-sidebar-shopCountry-category-ninth-name">
+                                                Vietnam
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-9 col-lg-12">
+                            <div class="main-container-content-product">
+                                <p class="main-container-content-product-title">
+                                    All Products
+                                </p>
+
+                                <div class="image-slider">
+                                    <div class="image-item">
+                                        <div class="image">
+                                            <img src="https://api.nft-square.io/files/ecommerce/d060655461af4bbfba16e87a8d248ff8herobanner%20NN.png"
+                                                alt="" class="main-container-content-product-slide" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-container-content-product-ntfBox">
+                                    <div class="main-container-content-product-ntfBox-row1">
+                                        <p class="main-container-content-product-ntfBox-row1-title">
+                                            NFT Box
+                                        </p>
+                                        <div class="main-container-content-product-ntfBox-row1-link">
+                                            <p class="main-container-content-product-ntfBox-row1-link-text">
+                                                See more
+                                            </p>
+                                            <img src="https://nft-square.io/static/media/arrow-right-icon.c54ad8489c44f3e5b5c6c1fb94d7d607.svg"
+                                                alt="" class="main-container-content-product-ntfBox-row1-link-img" />
+                                        </div>
+                                    </div>
+
+                                    <div class="main-container-content-product-ntfBox-row2">
+                                        <div class="row">
+                                            <div class="row-ntfBox">
+                                                <div class="col col-lg-3 col-sm-4 col-6">
+                                                    <div class="card">
+                                                        <div class="card-intro">
+                                                            <img src="https://api.nft-square.io/files/ecommerce/7e0c8dcf6ae34d1ab29c23fa304ebc8ecrazy.jpg"
+                                                                alt="" class="card-intro-img" />
+                                                            <p class="card-intro-name">Crazy Box</p>
+                                                        </div>
+                                                        <img src="https://api.nft-square.io/files/ecommerce/ce0bc895247a40058ede0b2b2bf6c2c7OriginBox.jpg"
+                                                            class="card-img-top" alt="..." />
+                                                        <div class="card-body">
+                                                            <h5 class="card-body-title">Origin Box</h5>
+                                                            <hr class="card-body-hr" />
+                                                            <p class="card-body-text">
+                                                                The Origin Box is a unique and exclusive gift
+                                                                box that contains a collection of NFTs, each one
+                                                                featuring stunning and intricate artwork that
+                                                                celebrates the beauty and complexity of DNA and
+                                                                its origins. From the swirling patterns of the
+                                                                double helix to the microscopic structures of
+                                                                individual genes, each piece of artwork captures
+                                                                the wonder and majesty of the building blocks of
+                                                                life. The NFTs in the Origin Box are rare and
+                                                                valuable, and are sure to delight anyone who
+                                                                appreciates the beauty of science and art. This
+                                                                is the perfect gift for those who are fascinated
+                                                                by the mysteries of life, and who are passionate
+                                                                about the creative potential of NFTs and
+                                                                blockchain technology.
+                                                                <br />
+                                                                <br />
+                                                                In the primordial void of the cosmos, before the
+                                                                stars had even begun to twinkle, there was only
+                                                                chaos and darkness. But within this great
+                                                                emptiness, something began to stir. From the
+                                                                very essence of nothingness, a spark of light
+                                                                emerged, flickering and uncertain. And from that
+                                                                tiny spark, all of creation was born. First came
+                                                                the heavens, with their swirling clouds of gas
+                                                                and dust. Then the planets, each one unique and
+                                                                full of possibility. And finally, the first
+                                                                stirrings of life, as the building blocks of DNA
+                                                                and RNA began to combine and recombine in
+                                                                endless permutations, giving rise to an
+                                                                incredible array of species, each one perfectly
+                                                                adapted to its own environment. This was the
+                                                                dawn of time, the moment when all things came
+                                                                into being, and the universe began its endless
+                                                                journey towards complexity and beauty.
+                                                            </p>
+                                                        </div>
+                                                        <div class="card-footer">
+                                                            <div class="card-footer-price">
+                                                                <p class="card-footer-price-text">Price:</p>
+                                                                <div class="card-footer-price-number">49$</div>
+                                                            </div>
+                                                            <p class="card-footer-name">NFT Square</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col col-lg-3 col-sm-4 col-6">
+                                                    <div class="card">
+                                                        <div class="card-intro">
+                                                            <img src="https://api.nft-square.io/files/ecommerce/4e3fba554a2a446a8d49a8f8272917edMystery%202.jpg"
+                                                                alt="" class="card-intro-img" />
+                                                            <p class="card-intro-name">Mystery Box</p>
+                                                        </div>
+                                                        <img src="https://api.nft-square.io/files/ecommerce/160613b619634913b1f4e7e1cfd8aeceMystery%20BoxSilver.jpg"
+                                                            class="card-img-top" alt="..." />
+                                                        <div class="card-body">
+                                                            <h5 class="card-body-title">
+                                                                Mystery Box - Silver
+                                                            </h5>
+                                                            <hr class="card-body-hr" />
+                                                            <p class="card-body-text">
+                                                                Mystery box which is a type of non-fungible
+                                                                token that is sold as a mystery item, with the
+                                                                contents of the box being unknown to the buyer
+                                                                until they open it. It is similar to the concept
+                                                                of a blind box or a loot box, which are popular
+                                                                in the gaming industry. A gift box which can
+                                                                contain many other NFTs and you can send it as
+                                                                an NFT gift to your friend and to experience a
+                                                                premium gifting experience.
+                                                                <br />
+                                                                <br />
+                                                                Mystery Box - Silver includes a Utilities NFT, a
+                                                                Game NFT, and an Artist NFT. This box is great
+                                                                for those who are new to NFTs and want a taste
+                                                                of what the NFT world has to offer.
+                                                            </p>
+                                                        </div>
+                                                        <div class="card-footer">
+                                                            <div class="card-footer-price">
+                                                                <p class="card-footer-price-text">Price:</p>
+                                                                <div class="card-footer-price-number">99$</div>
+                                                            </div>
+                                                            <p class="card-footer-name">NFT Square</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col col-lg-3 col-sm-4 col-6">
+                                                    <div class="card">
+                                                        <div class="card-intro">
+                                                            <img src="https://api.nft-square.io/files/ecommerce/61538244bd514356ba17afa3c353235bebeb9615203348c9b109c40b14c14eacnftsquare%20favicon.png"
+                                                                alt="" class="card-intro-img" />
+                                                            <p class="card-intro-name">NFT Square</p>
+                                                        </div>
+                                                        <video class="card-img-top" autoplay loop>
+                                                            <source
+                                                                src="https://file.hstatic.net/200000265429/file/n3w_box_final_video_ec3d36a752974c7cb661512c3fc9f22d.mp4" />
+                                                        </video>
+                                                        <div class="card-body">
+                                                            <h5 class="card-body-title">N3W Box</h5>
+                                                            <hr class="card-body-hr" />
+                                                            <p class="card-body-text">
+                                                                The N3W Box is a great starting point for you to
+                                                                explore and learn more about the world of Web3.
+                                                                By owning these NFTs, you can learn more about
+                                                                the fundamentals of Web3 and start your journey
+                                                                into the world of Web3.
+                                                                <br />
+                                                                The N3W box contains:
+                                                                <br />
+                                                                - NFTs which let you have access to a knowledge
+                                                                hub about Web3 philosophy and guide you to the
+                                                                most basic Web3 experiences.
+                                                                <br />
+                                                                - An NFT Square's POAP with future value
+                                                                <br />
+                                                                - Beautiful artistic NFT Box
+                                                                <br />
+                                                                - An amount of cryptocurrencies to start your
+                                                                journey (reveal in your wallet within a few
+                                                                hours).
+                                                            </p>
+                                                        </div>
+                                                        <div class="card-footer">
+                                                            <div class="card-footer-price">
+                                                                <p class="card-footer-price-text">Price:</p>
+                                                                <div class="card-footer-price-quantity">
+                                                                    <p>99$</p>
+                                                                    <span>/</span>
+                                                                    <div class="card-footer-price-number">
+                                                                        69$
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <p class="card-footer-name">NFT Square</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col col-lg-3 col-sm-4 col-6">
+                                                    <div class="card">
+                                                        <div class="card-intro">
+                                                            <img src="https://api.nft-square.io/files/ecommerce/f6d2f0c6003a4c698c564374a0b88fcalucky%20pot.jpg"
+                                                                alt="" class="card-intro-img" />
+                                                            <p class="card-intro-name">Lucky Box</p>
+                                                        </div>
+                                                        <img src="https://api.nft-square.io/files/ecommerce/54016cf3d81d4d81820f3bce41371543RafflesBox.jpg"
+                                                            class="card-img-top" alt="..." />
+                                                        <div class="card-body">
+                                                            <h5 class="card-body-title">Raffles Box</h5>
+                                                            <hr class="card-body-hr" />
+                                                            <p class="card-body-text">
+                                                                Raffle Box is a special box containing NFTs
+                                                                designed to be used in raffles, lotteries,
+                                                                jackpots, and similar activities. Inside the box
+                                                                is a collection of unique, carefully selected
+                                                                and beautifully designed NFTs to provide users
+                                                                with an exciting experience and potential
+                                                                profit. When you use the NFTs in Raffle Box to
+                                                                participate in raffles or jackpots, you will
+                                                                have the opportunity to win attractive and
+                                                                valuable prizes. This gift box will be an
+                                                                excellent choice for those who love to
+                                                                participate in raffles, lotteries, or jackpots
+                                                                and want to own unique and valuable NFTs.
+                                                            </p>
+                                                        </div>
+                                                        <div class="card-footer">
+                                                            <div class="card-footer-price">
+                                                                <p class="card-footer-price-text">Price:</p>
+                                                                <div class="card-footer-price-number">19$</div>
+                                                            </div>
+                                                            <p class="card-footer-name">NFT Square</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="main-container-content-product-digitalCollectibles">
+                                    <div class="main-container-content-product-ntfBox-row1">
+                                        <p class="main-container-content-product-ntfBox-row1-title">
+                                            Digital Collectibles
+                                        </p>
+                                        <div class="main-container-content-product-ntfBox-row1-link">
+                                            <p class="main-container-content-product-ntfBox-row1-link-text">
+                                                See more
+                                            </p>
+                                            <img src="https://nft-square.io/static/media/arrow-right-icon.c54ad8489c44f3e5b5c6c1fb94d7d607.svg"
+                                                alt="" class="main-container-content-product-ntfBox-row1-link-img" />
+                                        </div>
+                                    </div>
+
+                                    <div class="main-container-content-product-ntfBox-row2">
+                                        <div class="row">
+                                            <div class="row-ntfBox">
+                                                <div class="col col-lg-3 col-sm-4 col-6">
+                                                    <div class="card">
+                                                        <div class="card-intro">
+                                                            <img src="https://api.nft-square.io/files/ecommerce/61538244bd514356ba17afa3c353235bebeb9615203348c9b109c40b14c14eacnftsquare%20favicon.png"
+                                                                alt="" class="card-intro-img" />
+                                                            <p class="card-intro-name">NFT Square</p>
+                                                        </div>
+                                                        <img src="https://api.nft-square.io/files/ecommerce/f6aeb0eaf2cb45188681c6bf3d9b96b3welcome%20nft%20resize%207.jpg"
+                                                            class="card-img-top" alt="..." />
+                                                        <div class="card-body">
+                                                            <h5 class="card-body-title">
+                                                                [FREE CLAIM] Welcome NFT Square
+                                                            </h5>
+                                                            <hr class="card-body-hr" />
+                                                            <p class="card-body-text">
+                                                                "Welcome NFT Square" is a collection released by
+                                                                NFT square to gift to users who visit NFT square
+                                                                for the first time. How to claim NFT: + Step 1:
+                                                                Enter your email and verify your account at My
+                                                                Profile -
+                                                                <a
+                                                                    href="https://nft-square.io/profile?keyword=info">https://nft-square.io/profile?keyword=info</a>
+                                                                . + Step 2: Receive the code in the email you
+                                                                registered (check the spam folder if you don't
+                                                                see the code). Enter the code to complete the
+                                                                verification. + Step 3: After successful
+                                                                verification, you will go to the claim page
+                                                                Welcome NFT Square to receive NFT. About NFT
+                                                                square: NFT Square - ""the next generation NFT
+                                                                ecommerce marketplace"" is an e-commerce
+                                                                platform and marketplace for “NFT as a
+                                                                products”. We are aiming to create a new
+                                                                shopping experience for a wider global audience
+                                                                of end-users and are creating new business
+                                                                solutions for brands, corporates, creators, etc.
+                                                            </p>
+                                                        </div>
+                                                        <div class="card-footer">
+                                                            <div class="card-footer-price">
+                                                                <p class="card-footer-price-text">Price:</p>
+                                                                <div class="card-footer-price-number">Free</div>
+                                                            </div>
+                                                            <p class="card-footer-name">NFT Square</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col col-lg-3 col-sm-4 col-6">
+                                                    <div class="card">
+                                                        <div class="card-intro">
+                                                            <img src="https://api.nft-square.io/files/ecommerce/47cbedb5c44642e8acf3bc49ca2f0f12HotWheelsLogo.jpg"
+                                                                alt="" class="card-intro-img" />
+                                                            <p class="card-intro-name">
+                                                                Hot Wheels NFT Garage
+                                                            </p>
+                                                        </div>
+                                                        <video class="card-img-top" autoplay loop>
+                                                            <source
+                                                                src="https://cdn.shopify.com/videos/c/o/v/8da75f361c044a869491b2cddc2eaaca.mp4" />
+                                                        </video>
+                                                        <div class="card-body">
+                                                            <h5 class="card-body-title">
+                                                                Hot Wheels S4 - Treasure Hunt
+                                                            </h5>
+                                                            <hr class="card-body-hr" />
+                                                            <p class="card-body-text">
+                                                                Build your ultimate Hot Wheels digital
+                                                                collection! Hot Wheels NFT Garage Series 4
+                                                                features high-octane castings across familiar
+                                                                themes. A few lucky buyers will open their packs
+                                                                to find something extra special – a Premium or
+                                                                NFTH card that will give them access to a
+                                                                physical car. The five die-cast editions in this
+                                                                series are produced in some of the lowest
+                                                                quantities we’ve ever made, with premium
+                                                                Spectraflame paint and Real Riders wheels. The
+                                                                more packs you buy, the better your chances of
+                                                                getting one of these amazing castings, so grab
+                                                                your packs while they last. <br />+ 58.83% Basic
+                                                                Crypto-Collectible (Rarity: Common)<br />+
+                                                                27.05% Epic Crypto-Collectible (Rarity:
+                                                                Uncommon)<br />+ 9.47% Flame Crypto-Collectible
+                                                                (Rarity: Rare)<br />+ 4.06% Premium
+                                                                Crypto-Collectible (Rarity: Super Rare)<br />+
+                                                                0.51% NFTH Crypto-Collectible (Rarity: Ultra
+                                                                Rare)<br />+ 0.08% Showroom Crypto-Collectible
+                                                                (Rarity: Exclusive)<br />All NFT images are 3D
+                                                                renderings. Final product may vary.&nbsp;<br />
+                                                            </p>
+                                                        </div>
+                                                        <div class="card-footer">
+                                                            <div class="card-footer-price">
+                                                                <p class="card-footer-price-text">Price:</p>
+                                                                <div class="card-footer-price-number">Free</div>
+                                                            </div>
+                                                            <p class="card-footer-name">NFT Square</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col col-lg-3 col-sm-4 col-6">
+                                                    <div class="card">
+                                                        <div class="card-intro">
+                                                            <img src="https://api.nft-square.io/files/ecommerce/2f8b02ef389847dc8495c5b39f5fe119Metadata512x512.jpg"
+                                                                alt="" class="card-intro-img" />
+                                                            <p class="card-intro-name">RTFKT</p>
+                                                        </div>
+                                                        <video class="card-img-top" autoplay loop>
+                                                            <source
+                                                                src="https://cdn.rtfkt.com/assets/https://cdn.rtfkt.com/assets/cryptokicks-lookbook/nftvids/small_stone.mp4" />
+                                                        </video>
+                                                        <div class="card-body">
+                                                            <h5 class="card-body-title">
+                                                                Cryptokicks iRL “STONE”
+                                                            </h5>
+                                                            <hr class="card-body-hr" />
+                                                            <p class="card-body-text">
+                                                                The Cryptokicks iRL is the first native Web3
+                                                                sneaker featuring the latest technology which
+                                                                combines decades of Nike Sneaker innovation,
+                                                                with RTFKT’s vision to merge the digital and
+                                                                physical worlds.
+                                                                <br />
+                                                                The living stones of the planet Stheno III can
+                                                                jump into space and hitch a ride with a passing
+                                                                comet or spaceship. Through the eons, they have
+                                                                spread to all known worlds and have been
+                                                                sculpted into many wondrous artefacts.
+                                                                <br />
+                                                                Digital Collectible terms and conditions apply,
+                                                                see
+                                                                <a
+                                                                    href="https://rtfkt.com/legal-2D">https://rtfkt.com/legal-2D</a>
+                                                                👨‍⚖️
+                                                                <br />
+                                                                Forging terms apply, see
+                                                                <a
+                                                                    href="https://rtfkt.com/legal-1B">https://rtfkt.com/legal-1B</a>
+                                                                <br />
+                                                                Digital Collectible: Wearable & ioAAF compatible
+                                                                <br />
+                                                                Cryptokicks Connected NFT Linking capable via
+                                                                World Merging NFC tech 🔗 on physical
+                                                                Cryptokicks iRL shoes.
+                                                            </p>
+                                                        </div>
+                                                        <div class="card-footer">
+                                                            <div class="card-footer-price">
+                                                                <p class="card-footer-price-text">Price:</p>
+                                                                <div class="card-footer-price-number">Free</div>
+                                                            </div>
+                                                            <p class="card-footer-name">NFT Square</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col col-lg-3 col-sm-4 col-6">
+                                                    <div class="card">
+                                                        <div class="card-intro">
+                                                            <img src="https://api.nft-square.io/files/ecommerce/47cbedb5c44642e8acf3bc49ca2f0f12HotWheelsLogo.jpg"
+                                                                alt="" class="card-intro-img" />
+                                                            <p class="card-intro-name">
+                                                                Hot Wheels NFT Garage
+                                                            </p>
+                                                        </div>
+                                                        <video class="card-img-top" autoplay loop>
+                                                            <source
+                                                                src="https://cdn.shopify.com/videos/c/o/v/e1efe4d2605a480c86649bd48be2f577.mp4" />
+                                                        </video>
+                                                        <div class="card-body">
+                                                            <h5 class="card-body-title">
+                                                                Hot Wheels S4 - Treasure Hunt
+                                                            </h5>
+                                                            <hr class="card-body-hr" />
+                                                            <p class="card-body-text">
+                                                                Build your ultimate Hot Wheels digital
+                                                                collection! Hot Wheels NFT Garage Series 4
+                                                                features high-octane castings across familiar
+                                                                themes. A few lucky buyers will open their packs
+                                                                to find something extra special – a Premium or
+                                                                NFTH card that will give them access to a
+                                                                physical car. The five die-cast editions in this
+                                                                series are produced in some of the lowest
+                                                                quantities we’ve ever made, with premium
+                                                                Spectraflame paint and Real Riders wheels. The
+                                                                more packs you buy, the better your chances of
+                                                                getting one of these amazing castings, so grab
+                                                                your packs while they last. <br />+ 58.83% Basic
+                                                                Crypto-Collectible (Rarity: Common)<br />+
+                                                                27.05% Epic Crypto-Collectible (Rarity:
+                                                                Uncommon)<br />+ 9.47% Flame Crypto-Collectible
+                                                                (Rarity: Rare)<br />+ 4.06% Premium
+                                                                Crypto-Collectible (Rarity: Super Rare)<br />+
+                                                                0.51% NFTH Crypto-Collectible (Rarity: Ultra
+                                                                Rare)<br />+ 0.08% Showroom Crypto-Collectible
+                                                                (Rarity: Exclusive)<br />All NFT images are 3D
+                                                                renderings. Final product may vary.&nbsp;<br />
+                                                            </p>
+                                                        </div>
+                                                        <div class="card-footer">
+                                                            <div class="card-footer-price">
+                                                                <p class="card-footer-price-text">Price:</p>
+                                                                <div class="card-footer-price-number">Free</div>
+                                                            </div>
+                                                            <p class="card-footer-name">NFT Square</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-container-content-product-tokenGated">
+                                    <div class="main-container-content-product-ntfBox-row1">
+                                        <p class="main-container-content-product-ntfBox-row1-title">
+                                            Token Gated
+                                        </p>
+                                        <div class="main-container-content-product-ntfBox-row1-link">
+                                            <p class="main-container-content-product-ntfBox-row1-link-text">
+                                                See more
+                                            </p>
+                                            <img src="https://nft-square.io/static/media/arrow-right-icon.c54ad8489c44f3e5b5c6c1fb94d7d607.svg"
+                                                alt="" class="main-container-content-product-ntfBox-row1-link-img" />
+                                        </div>
+                                    </div>
+
+                                    <div class="main-container-content-product-ntfBox-row2">
+                                        <div class="row">
+                                            <div class="row-ntfBox">
+                                                <div class="col col-lg-3 col-sm-4 col-6">
+                                                    <div class="card">
+                                                        <div class="card-intro">
+                                                            <img src="https://api.nft-square.io/files/ecommerce/61538244bd514356ba17afa3c353235bebeb9615203348c9b109c40b14c14eacnftsquare%20favicon.png"
+                                                                alt="" class="card-intro-img" />
+                                                            <p class="card-intro-name">NFT Square</p>
+                                                        </div>
+                                                        <img src="https://api.nft-square.io/files/ecommerce/f6aeb0eaf2cb45188681c6bf3d9b96b3welcome%20nft%20resize%207.jpg"
+                                                            class="card-img-top" alt="..." />
+                                                        <div class="card-body">
+                                                            <h5 class="card-body-title">
+                                                                [FREE CLAIM] Welcome NFT Square
+                                                            </h5>
+                                                            <hr class="card-body-hr" />
+                                                            <p class="card-body-text">
+                                                                "Welcome NFT Square" is a collection released by
+                                                                NFT square to gift to users who visit NFT square
+                                                                for the first time. How to claim NFT: + Step 1:
+                                                                Enter your email and verify your account at My
+                                                                Profile -
+                                                                <a
+                                                                    href="https://nft-square.io/profile?keyword=info">https://nft-square.io/profile?keyword=info</a>
+                                                                . + Step 2: Receive the code in the email you
+                                                                registered (check the spam folder if you don't
+                                                                see the code). Enter the code to complete the
+                                                                verification. + Step 3: After successful
+                                                                verification, you will go to the claim page
+                                                                Welcome NFT Square to receive NFT. About NFT
+                                                                square: NFT Square - ""the next generation NFT
+                                                                ecommerce marketplace"" is an e-commerce
+                                                                platform and marketplace for “NFT as a
+                                                                products”. We are aiming to create a new
+                                                                shopping experience for a wider global audience
+                                                                of end-users and are creating new business
+                                                                solutions for brands, corporates, creators, etc.
+                                                            </p>
+                                                        </div>
+                                                        <div class="card-footer">
+                                                            <div class="card-footer-price">
+                                                                <p class="card-footer-price-text">Price:</p>
+                                                                <div class="card-footer-price-number">Free</div>
+                                                            </div>
+                                                            <p class="card-footer-name">NFT Square</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col col-lg-3 col-sm-4 col-6">
+                                                    <div class="card">
+                                                        <div class="card-intro">
+                                                            <img src="https://api.nft-square.io/files/ecommerce/17219c5d50e040db9b8b7c9a69c04a1eHunter.jpg"
+                                                                alt="" class="card-intro-img" />
+                                                            <p class="card-intro-name">
+                                                                Hunter NFT Acdemia PH
+                                                            </p>
+                                                        </div>
+                                                        <img src="https://api.nft-square.io/files/ecommerce/2be958148fd24c6d8b876ee8b40dd9d2Hunter%20Golden%20resize%2013.jpg"
+                                                            alt="" class="card-img-top" />
+                                                        <div class="card-body">
+                                                            <h5 class="card-body-title">
+                                                                Hunter NFT PH Golden Membership
+                                                            </h5>
+                                                            <hr class="card-body-hr" />
+                                                            <p class="card-body-text">
+                                                                Introducing the highly representative NFT of the
+                                                                Hunter NFT PH VIP Membership, exclusively
+                                                                designed in collaboration with NFT Square. This
+                                                                NFT artwork showcases the unique brand identity
+                                                                and spirit of Hunter NFT Academia PH, making it
+                                                                a prized possession for its members. Not only is
+                                                                owning this NFT a badge of honor for its
+                                                                members, but it also grants them the opportunity
+                                                                to participate in the Lucky Pool and potentially
+                                                                win a significant reward from the community.
+                                                                With its unparalleled design and significance,
+                                                                Hunter NFT PH VIP Membership is truly a
+                                                                remarkable addition to any collection. Join us
+                                                                in celebrating the creativity and unity of
+                                                                Hunter NFT Academia PH with this remarkable NFT.
+                                                                ----------------- What's Lucky Pool? Lucky Pool
+                                                                is a lottery game for the community to create a
+                                                                specific NFT collectible for each community. 1
+                                                                NFT is a ticket to join the lottery game 1 time.
+                                                                Each pool will be randomly selected as the
+                                                                luckiest NFT and the owner will receive the
+                                                                prize. How to join: + Step 1: User connects
+                                                                wallet to Polygon chain and buys NFT + Step 2:
+                                                                User waits for the result of Pool + Step 3: The
+                                                                prize will be sent automatically to Owner
+                                                                Schedule: Start time: March 9, 12:00 PM UTC End
+                                                                time: March 22, 12:00 PM UTC Draw time: March
+                                                                25, 12:00 UTC ----------------- About Hunter NFT
+                                                                Academia PH Hunter NFT Academia PH is guild
+                                                                community also that focus on helping other
+                                                                investor to look for good project to invest on
+                                                                nft games decentralized finance and crypto
+                                                                trading our aim and goal to help and inform the
+                                                                new investor want to learn also on nft games
+                                                                decentralized finance and crypto trading.
+                                                            </p>
+                                                        </div>
+                                                        <div class="card-footer">
+                                                            <div class="card-footer-price">
+                                                                <p class="card-footer-price-text">Price:</p>
+                                                                <div class="card-footer-price-number">50$</div>
+                                                            </div>
+                                                            <p class="card-footer-name">NFT Square</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col col-lg-3 col-sm-4 col-6">
+                                                    <div class="card">
+                                                        <div class="card-intro">
+                                                            <img src="https://api.nft-square.io/files/ecommerce/89deb96c97374e9f9962f7bed3340679064502858cb04c64bc24cd54d8844167Brandmarketerinweb3.jpg"
+                                                                alt="" class="card-intro-img" />
+                                                            <p class="card-intro-name">Marketer in Web3</p>
+                                                        </div>
+                                                        <img src="https://api-qa.nft-square.io/files/ecommerce/5bb431f9d20246e59a2f6efeefe7a413Ch%C6%B0a%20c%C3%B3%20t%C3%AAn%20(800%20%C3%97%20800%20px)%20(1).gif"
+                                                            alt="" class="card-img-top" />
+                                                        <div class="card-body">
+                                                            <h5 class="card-body-title">
+                                                                Web3 Passport For Marketer
+                                                            </h5>
+                                                            <hr class="card-body-hr" />
+                                                            <p class="card-body-text">
+                                                                Marketer in Web3 is a place where marketers can
+                                                                learn knowledge and experience of NFT in the 3rd
+                                                                generation internet world. Marketer's position
+                                                                will be maintained and developed unless always
+                                                                updating new technology trends; not only career
+                                                                but also new business opportunities. Each NFT
+                                                                Collection is a journey for marketers from
+                                                                discovering opportunities, experiencing in the
+                                                                Web3 world.
+                                                            </p>
+                                                        </div>
+                                                        <div class="card-footer">
+                                                            <div class="card-footer-price">
+                                                                <p class="card-footer-price-text">Price:</p>
+                                                                <div class="card-footer-price-number">19$</div>
+                                                            </div>
+                                                            <p class="card-footer-name">NFT Square</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col col-lg-3 col-sm-4 col-6">
+                                                    <div class="card">
+                                                        <div class="card-intro">
+                                                            <img src="https://api.nft-square.io/files/ecommerce/cb4bb84621be4d2c98d8b348358f5217famicon.png"
+                                                                alt="" class="card-intro-img" />
+                                                            <p class="card-intro-name">FAM Central</p>
+                                                        </div>
+                                                        <video class="card-img-top" autoplay loop>
+                                                            <source
+                                                                src="https://file.hstatic.net/200000265429/file/camera_70fa425b43d84af19c206dfe0b89ca04.mp4" />
+                                                        </video>
+                                                        <div class="card-body">
+                                                            <h5 class="card-body-title">
+                                                                Fam Legend - Camera
+                                                            </h5>
+                                                            <hr class="card-body-hr" />
+                                                            <p class="card-body-text">
+                                                                Camera is an important device, but depending on
+                                                                the purpose and idea of the film, the film crew
+                                                                will choose the appropriate one. The camera is
+                                                                designed to record consecutive images on a roll
+                                                                of film that is re positioned after each
+                                                                exposure. It is also an indispensable tool to
+                                                                convey content as well as key messages of the
+                                                                film to the audience.
+                                                                <br />
+                                                                <br />
+                                                            </p>
+                                                        </div>
+                                                        <div class="card-footer">
+                                                            <div class="card-footer-price">
+                                                                <p class="card-footer-price-text">Price:</p>
+                                                                <div class="card-footer-price-number">Free</div>
+                                                            </div>
+                                                            <p class="card-footer-name">NFT Square</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-container-content-product-investment">
+                                    <div class="main-container-content-product-ntfBox-row1">
+                                        <p class="main-container-content-product-ntfBox-row1-title">
+                                            Investment
+                                        </p>
+                                        <div class="main-container-content-product-ntfBox-row1-link">
+                                            <p class="main-container-content-product-ntfBox-row1-link-text">
+                                                See more
+                                            </p>
+                                            <img src="https://nft-square.io/static/media/arrow-right-icon.c54ad8489c44f3e5b5c6c1fb94d7d607.svg"
+                                                alt="" class="main-container-content-product-ntfBox-row1-link-img" />
+                                        </div>
+                                    </div>
+
+                                    <div class="main-container-content-product-ntfBox-row2">
+                                        <div class="row">
+                                            <div class="row-ntfBox">
+                                                <div class="col col-lg-3 col-sm-4 col-6">
+                                                    <div class="card">
+                                                        <div class="card-intro">
+                                                            <img src="https://api.nft-square.io/files/ecommerce/719f59eabfd842a9a030a8f2342bd22e45371ffb24644e418abd698268881d87famicon.png"
+                                                                alt="" class="card-intro-img" />
+                                                            <p class="card-intro-name">F - Trading</p>
+                                                        </div>
+                                                        <img src="https://api.nft-square.io/files/ecommerce/293256f7206645f18a45d838f0f6f775NTDN2.jpg"
+                                                            class="card-img-top" alt="..." />
+                                                        <div class="card-body">
+                                                            <h5 class="card-body-title">
+                                                                [UPCOMING] Nguyen Tran Duy Nhat
+                                                            </h5>
+                                                            <hr class="card-body-hr" />
+                                                            <p class="card-body-text">
+                                                                Nguyen Tran Duy Nhat Martial Center NFT is an
+                                                                NFT collection for the purpose of investing in a
+                                                                real business model in the fitness industry. The
+                                                                value of NFT is the value of investing in
+                                                                opening a group of 5 Martial training centers
+                                                                under the brand name Nguyen Tran Duy Nhat. About
+                                                                Nguyen Tran Duy Nhat Nguyen Tran Duy Nhat is
+                                                                currently a symbol of Vietnam's martial arts
+                                                                industry. He comes from a family with a long
+                                                                martial arts tradition. Duy Nhat has repeatedly
+                                                                represented Vietnamese martial arts to compete
+                                                                in international arenas and achieved many
+                                                                excellent achievements. Notable: - Gold Medal
+                                                                World Games 2022 - Champion of the World
+                                                                Muaythai Federation - Champion of the Uni Super
+                                                                Championship 2018, - Gold Medalist at the 2016
+                                                                Asian Beach Games Muay Thai Men's Featherweight,
+                                                                - Gold Medal at the 2014 Asian Beach Games Muay
+                                                                Thai Men's Featherweight, - Gold Medal at the
+                                                                Asian Indoor and Martial Arts Games 2013 Men's
+                                                                Feather Division. Currently, Duy Nhat is
+                                                                focusing on coaching to train the younger
+                                                                generations, with 3 martial arts training
+                                                                centers in Ho Chi Minh City.
+                                                            </p>
+                                                        </div>
+                                                        <div class="card-footer">
+                                                            <div class="card-footer-price">
+                                                                <p class="card-footer-price-text">Price:</p>
+                                                                <div class="card-footer-price-number">Free</div>
+                                                            </div>
+                                                            <p class="card-footer-name">NFT Square</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col col-lg-3 col-sm-4 col-6">
+                                                    <div class="card">
+                                                        <div class="card-intro">
+                                                            <img src="https://api.nft-square.io/files/ecommerce/2e7c08f60828409791bbd4e594b18a738bbe8ae32d4242079f8ff37a20ebfb0blogosharkpoolcircle.png"
+                                                                alt="" class="card-intro-img" />
+                                                            <p class="card-intro-name">SHARK POOL</p>
+                                                        </div>
+                                                        <img src="https://api.nft-square.io/files/ecommerce/6848bdae26df4e2eb4491de59e27e024shart%20pool%20resize%2015.jpg"
+                                                            alt="" class="card-img-top" />
+                                                        <div class="card-body">
+                                                            <h5 class="card-body-title">
+                                                                [UPCOMING] Shark Pool
+                                                            </h5>
+                                                            <hr class="card-body-hr" />
+                                                            <p class="card-body-text">
+                                                                NFT Shark Collections is a NFT investment Shark
+                                                                Pool project. About Shark Pool: Sharkpool is a
+                                                                web3 "launchpad and crowdfunding platform" which
+                                                                open for all kind of projects, startups and
+                                                                businesses around the world need to raise fund
+                                                                from investors. Beside that, Shark Pool will
+                                                                launch some special entertainment shows anually
+                                                                to support startups get more attrative fund and
+                                                                investors/ users. Our mision is supporting
+                                                                startup in finance and brings early investment
+                                                                opportunities to all investors.
+                                                            </p>
+                                                        </div>
+                                                        <div class="card-footer">
+                                                            <div class="card-footer-price">
+                                                                <p class="card-footer-price-text">Price:</p>
+                                                                <div class="card-footer-price-number">Free</div>
+                                                            </div>
+                                                            <p class="card-footer-name">NFT Square</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col col-lg-3 col-sm-4 col-6"></div>
+
+                                                <div class="col col-lg-3 col-sm-4 col-6"></div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-container-content-product-donation">
+                                    <div class="main-container-content-product-ntfBox-row1">
+                                        <p class="main-container-content-product-ntfBox-row1-title">
+                                            Donation
+                                        </p>
+                                        <div class="main-container-content-product-ntfBox-row1-link">
+                                            <p class="main-container-content-product-ntfBox-row1-link-text">
+                                                See more
+                                            </p>
+                                            <img src="https://nft-square.io/static/media/arrow-right-icon.c54ad8489c44f3e5b5c6c1fb94d7d607.svg"
+                                                alt="" class="main-container-content-product-ntfBox-row1-link-img" />
+                                        </div>
+                                    </div>
+
+                                    <div class="main-container-content-product-ntfBox-row2">
+                                        <div class="row">
+                                            <div class="row-ntfBox">
+                                                <div class="col col-lg-3 col-sm-4 col-6">
+                                                    <div class="card">
+                                                        <div class="card-intro">
+                                                            <img src="https://api.nft-square.io/files/ecommerce/719f59eabfd842a9a030a8f2342bd22e45371ffb24644e418abd698268881d87famicon.png"
+                                                                alt="" class="card-intro-img" />
+                                                            <p class="card-intro-name">F - Trading</p>
+                                                        </div>
+                                                        <img src="https://api.nft-square.io/files/ecommerce/d0f9a190288245bfbcd2bec1723001d5turkey%20resize%206.jpg"
+                                                            class="card-img-top" alt="..." />
+                                                        <div class="card-body">
+                                                            <h5 class="card-body-title">
+                                                                Turkey earthquake aid NFT
+                                                            </h5>
+                                                            <hr class="card-body-hr" />
+                                                            <p class="card-body-text">
+                                                                Turkey earthquake aid NFT" is an NFT collection
+                                                                created to raise funds for the Turkey earthquake
+                                                                relief efforts. Your donations to a disaster
+                                                                relief fund will be used to provide a variety of
+                                                                essential services to those affected by the
+                                                                disaster, including: 1. Emergency shelter: Funds
+                                                                will be used to provide temporary protection for
+                                                                people who have lost their homes, such as tents
+                                                                or prefabricated structures. 2. Food and water:
+                                                                Donations will be used to provide food, water,
+                                                                and other essential supplies to those affected
+                                                                by the disaster. 3. Medical aid: Funds will be
+                                                                used to provide medical care and supplies, such
+                                                                as first aid kits and medicine, to those who
+                                                                have been injured and require medical attention.
+                                                                4. Reconstruction and rebuilding: Donations will
+                                                                be used to help rebuild homes and communities
+                                                                that have been destroyed by the disaster,
+                                                                including rebuilding homes, schools, and other
+                                                                public buildings. 5. Psychological support:
+                                                                Disaster relief funds will also be used to
+                                                                provide psychological support and counseling
+                                                                services to help those affected by the disaster
+                                                                cope with the trauma they have experienced.
+                                                                These are some of the essential services that
+                                                                will be provided with the help of donations to a
+                                                                disaster relief fund. The specific use of funds
+                                                                will depend on the needs of the affected
+                                                                community and the resources available.
+                                                            </p>
+                                                        </div>
+                                                        <div class="card-footer">
+                                                            <div class="card-footer-price">
+                                                                <p class="card-footer-price-text">Price:</p>
+                                                                <div class="card-footer-price-number">Free</div>
+                                                            </div>
+                                                            <p class="card-footer-name">NFT Square</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col col-lg-3 col-sm-4 col-6"></div>
+
+                                                <div class="col col-lg-3 col-sm-4 col-6"></div>
+
+                                                <div class="col col-lg-3 col-sm-4 col-6"></div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" id="footer">
+        <div class="container-xl p-0">
+            <div class="footer-container">
+                <div class="footer-container-top">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-12">
+                            <div class="row-col1">
+                                <img src="https://nft-square.io/static/media/logo.b43dba9ef86b7ddaf8fc.png" alt=""
+                                    class="row-col1-img" />
+                                <p class="row-col1-text1">
+                                    Buying NFT for flipping is not bad, moreover at our
+                                    marketplace buyers can find many NFTs with utilities in real
+                                    life such as NFT vouchers, NFT ticket, NFT membership, NFT
+                                    financial, NFT digital art, NFT Phygital, NFT Raffles ...
+                                    even NFT donation.
+                                </p>
+                                <p class="row-col1-text2">© 2023, NFT SQUARE</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-12">
+                            <div class="row-col2">
+                                <p class="row-col2-text1">About Us</p>
+                                <p class="row-col2-text2">Become a seller</p>
+                                <p class="row-col2-text3">Library</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-12">
+                            <div class="row-col3">
+                                <p class="row-col3-text1">FAQs</p>
+                                <p class="row-col3-text2">Terms of Use</p>
+                                <p class="row-col3-text3">Privacy policy</p>
+                                <p class="row-col3-text3">Disclaimer</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-12">
+                            <div class="row-col4">
+                                <p class="row-col4-text1">Need help? Contact us now!</p>
+                                <p class="row-col4-text2">For buyers</p>
+                                <p class="row-col4-text3">For sellers</p>
+                                <div class="row-col4-social">
+                                    <img src="https://nft-square.io/static/media/icon_white_twitter.b987608f6b13909038bf6dd08bdde158.svg"
+                                        alt="" class="row-col4-social-twitter" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Twitter" data-bs-boundary="window" />
+                                    <img src="https://nft-square.io/static/media/icon_white_telegram.e715082e35f67c55670a284cb128f535.svg"
+                                        alt="" class="row-col4-social-telegram" />
+                                    <img src="https://nft-square.io/static/media/icon_linkedin.bbff2d32d98653f541e7109ce5d11ff2.svg"
+                                        alt="" class="row-col4-social-linkedIn" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="footer-container-hr" />
+
+                <div class="footer-container-bottom">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-12">
+                            <div class="row-col1">
+                                <p class="row-col1-title">A product by</p>
+                                <img src="https://nft-square.io/static/media/fam_logo.693c506b3d1d90bf9319.png" alt=""
+                                    class="row-col1-img" />
+                                <p class="row-col1-text1">
+                                    FAM Central offers numerous opportunities for individuals
+                                    and organizations to participate, apply, and invest in the
+                                    exciting world of web3, with a wide range of assets,
+                                    products, and solutions available.
+                                </p>
+                                <p class="row-col1-text2">© 2023, FAM CENTRAL</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-12">
+                            <div class="row-col2">
+                                <p class="row-col2-title1">Features</p>
+                                <p class="row-col2-text1">About Us</p>
+                                <p class="row-col2-text2">FAQ</p>
+                                <p class="row-col2-text3">Use Case</p>
+                                <p class="row-col2-text4">Be FAM Investors</p>
+                                <p class="row-col2-text5">Press Center</p>
+                                <p class="row-col2-title2">Legal & Compliance</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-12">
+                            <div class="row-col3">
+                                <p class="row-col3-title1">Ecosystem</p>
+                                <p class="row-col3-text1">Web3 Promotion Platform</p>
+                                <p class="row-col3-text2">W3W Network</p>
+                                <p class="row-col3-text3">W3ID</p>
+                                <p class="row-col3-text4">NFT Utilities Marketplace</p>
+                                <p class="row-col3-text5">NFT Store</p>
+                                <p class="row-col3-text6">NFT Box</p>
+                                <p class="row-col3-text7">Crowdfunding Platform</p>
+                                <p class="row-col3-text8">NFT Academy</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-12">
+                            <div class="row-col4">
+                                <p class="row-col4-title1">Resource</p>
+                                <p class="row-col4-text1">F Token</p>
+                                <p class="row-col4-text2">Events</p>
+                                <p class="row-col4-text3">Marketing Campaign</p>
+                                <p class="row-col4-text4">Partners</p>
+                                <p class="row-col4-text5">Brand Guidline</p>
+                                <p class="row-col4-text6">Academy</p>
+                                <p class="row-col4-text7">Careers</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-12">
+                            <div class="row-col5">
+                                <p class="row-col5-title1">Contact Us</p>
+                                <p class="row-col5-text1">Request Demo</p>
+                                <p class="row-col5-text2">Speak To An Expert</p>
+                                <p class="row-col5-text3">Other Contact</p>
+                                <p class="row-col5-text4">Follow Social</p>
+                                <p class="row-col5-social">
+                                    <img src="https://nft-square.io/static/media/icon_white_fb.e8c9f0652d18591eb590fe68b0ac1aef.svg"
+                                        alt="" class="row-col5-social-facebook" />
+                                    <img src="https://nft-square.io/static/media/icon_white_twitter.b987608f6b13909038bf6dd08bdde158.svg"
+                                        alt="" class="row-col5-social-twitter" />
+                                    <img src="https://nft-square.io/static/media/icon_white_telegram.e715082e35f67c55670a284cb128f535.svg"
+                                        alt="" class="row-col5-social-telegram" />
+                                    <img src="https://nft-square.io/static/media/icon_white_youtube.9e40ed3ed67a0def430fce2e5789d04d.svg"
+                                        alt="" class="row-col5-social-youtube" />
+                                    <img src="https://nft-square.io/static/media/icon_linkedin.bbff2d32d98653f541e7109ce5d11ff2.svg"
+                                        alt="" class="row-col5-social-linkedIn" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXAAAAFvCAMAAABkR2BDAAAAZlBMVEUAAAB7wcJ7wcJ7wcJ7wcJ7wcJ7wcJ7wcJ7wcJ7wcJ7wcJ7wcJ7wcJ7wcJ7wcJ7wcJ7wcL///+53t7u9/jd7/CExcb3+/vK5uew2tqe0tKVzc6Nycrl8/On1tbT6uvA4uPn9PSk1NUHIjecAAAAEHRSTlMAgMDwQBDQoCAw4GBwULCQYPDoZQAAC0VJREFUeNrs2wturDAMBVDn43zIQLL/1b4nVRVqSwemk9zS4Z4lXCHbiYN0lb0xi7XtRVi7GOOznJF6s4T2osJivMp5pBJfNutViCXJCfh6gbDfherlV83RtYtxcZZfkuvl0n7jahY4LReqJF+FooKUzEU/7pWrSVBSbPRf3Iycca/+YuSMGxq5mkafGJVhyuVb5RZXZIz8MpdSvdksA7Ca3GGkt3zpc86+kKWrW6MdN+lHWb0PsCqdeA4nhzjPcrLrhGWFR8sHRHmWcjp5SFBOg3vONB9mtsuHucy87zpR4sz7p4kz77tOkjjzfiZx5n3XCRJn3tjEdWr0lEl5vsQKyvsTrMhtGpiRg+ZGXcxySOKA0olLcgQbZjdBDqiNuqmyyzfqyPPEgzUpCwpWZUEB8ywoWJPyiIll5Fup0QBJvrM0GmBhxwTzso1vZAexvCQEm2ULR8JhJtlQGg1TeCuLFTiigHmOKFiWh0ywxIcRWFE+UC6OB3PKmRCrcCbECmyZYIn/vmLdWFGwAisKWGJFwbqxokCtNUUbQShXPVgz71GwIndrWBOHQrDEEo4180EhluFyDWddtHH3AOPYM8ES30dgefZMLMPfqLAqhxQsy7tZrCAijYAYOJhIbgT0j507WJUUBqIwzMDdDMyijjExKhh9/5ccabA1ttd7V0UdqX/lwt58iFbS4l8fw3X7cvDbHJy9L39FQrd/vrLX7Y+D3+bg7Dn4fQ7OnoPf5+DsOfh9Dr4Vo1BGC940QhkteAhCGSt4BhZhjBV8BlphjBS8x1ovhJGCtwDpJc4J3gOslzgneABYL3FK8IxXlIMKI3gMGzjhLM4IXvCuCFuE4GPCuzQKWYTgEw5NQhYf+IJXrM9NOvAYUBXItmnpwDuc6oQqNvAea8w3FTLwGPBRorqpkIFPqCJc4XOBZxziXP5QgQ8J5+i2DZnA44wqygUnE3iHb5tpHpxE4A0O0U7jPOA98ARxGvAh4b4sFLGAHx+Y1KMKCfgvvJEGIYgEvAMeIs4BfvJmHscpwE/e1OM4A3gHPEecADwDDxK3D56BJ4mbB++AR4lbBz9580+HxsGvvdvtYOITNw0eL73TItuh9IFN3DJ4nK8wS5QdXKRJVyfZ3ckyDD7O33BX4BJLYNo7tAs+JJwLzYu7Bl/LM8/+uFnw/Em4yFYNvjZ04eN0m+OhVfAOdVPe/S7A5WXOMJDbBI9tJdctUrWD143NdEQPFocVk+DDmy21ZYlyrgavG5fSpu3XBl87tAjeYK1tS+lHuW4Hvy72uUxtAOx9AcEieD/IbRX4ffb+57QI/mM7OF8OrpqDK+fgyjm4cg6unIMr5+DKObhyDq6cgyvn4Mo5uHIOrpyDK+fgyjm4cg6unIMr5+DKObhyDq6cg/9n745KGAigGAhaaDkF599kqYF8PliYlTACkuOAHwf8OODHAT8O+HHAjwN+HPDjgB8H/Lgq+JN9lYmCv8Wp9n9V8M/7fL9P0bsK3g34Dng94Dvg9YDvgNcDvgNeD/gOeD3gO+D1gO+A1wO+A14P+A54PeA74PWA74DXA74DXg/4Dng94Dvg9X7s0DENAAAAwyD/rueg/xKQgPAm/J3wJvyd8Cb8nfAm/J3wJvyd8Cb8nfAm/J3wJvyd8Cb8nfAm/J3wJnzU11tugzAUhOEtnAs2NjZk/7usVDUypGQ4USZS+71W7iQ/DaH/HSP4Yj+KvGa1H/K+/zL9ZvBqkx5ks+DB/nCuSIy+gjHtemozWwThB683PbWtgi0GzlGDM6Zdn9uKANzgBbwQN3SdpufnCjk4Y9oVsiQALfjqCvkq59qkSK/U4Ixp1wtFAE7wtOmlLckJ0yszMzhj2vXKlAQgBK+uAbnKozTpNV94wRnTHjjXZOAHLxpkcrS4hlRacMZ05KQnGdjBi0bdHnpnDaqs4Ixp14BJBkZw3Huzb/PJZce9Z/v2UnF9BWPaz6omM/BpZgZf9KhbkqGYDqvsJX+8SjKsNz3Ii4RNeucyvDGNgw+WdchJPhK8Zd2bfocp/f625GDTvbnh5xdPhOCEaRRcUtfBhBEcv/a8ypmSTy656Y7Xyyf0mRCcMX0MDop3RnB8A+9Nnph/PRS2HPiGuelOJQSnTDs4vOjQPhHcwWuH5tBB08EJwQnTh+Dwl9sHghu41UFNhx68LoUQnDCNg6/7h2B+cIefoNi7yS244ITghGkcPOn4KT94AV/KUAsfrDpUQnDCtMOkXe86P/gE/vwg2x2Mb2yE4IRpEBysM4IncIPFevxgBf9LBILTpv9C8C92zmWnYRiIoqFigdTN2DRvJ/n/v2RXAZfmZsLFskzPFsoNR2kyfs3y6YLMw3RIIhpavMKF0SUIX+kbmT9RVs8vb17h8mguvFO/NPm9x1k9H5xIFUeEq6L9VcqqE46PcHORXMVkF+60TuHqaC58kA98+K3HCXc6Xy00OYUro4lw/MRiYuELnVniVfjNN0hanMKV0Uw41hFq4ZF+e3i51StzULg2mgufO/L3VcIHo5yfbxgEwgXRRDgslI5WjHBiUChcGc2FR1jUzCs8IvUKb+MWvjDnFx6QyoTvEK0g4dU8w8merdxVSkAqq1IcvsV1+OYQ7i6GN0kdrovmwqMB4pHmelB4ZSPNn0mT/Y3wlgztuwDghEabay5FE82Fp8EAiXB+8UsAKpstROJogE74BmUKm5GobD78C30kZx+kKz7rMeH/YMUHEApvydMVhf+DNU1AJ5xvM0Lh/qXzPsuqPY8uQji7+1C4a71fvy/lfHQZwi2RwRUId29/Sll2XvHoQoQPgbzRQLhzg9+WZW8hjy5FuKW92wWF1797FhALH/fOyuF/WP3+cEAt3Lad0zAovPYTEIBeuKWdaTIQXvkZH4JG+NyRlgBTH+6cPkoWMp5iw+iihNv4vUHK9PmH8f1xbwHHYcnFCFS4Klov/GpORpyijA+u/uxJ5MEIXLgmWi/82ryal/Hw1YvO2iNcuCZaL/wVhXPm5BCu7ibhE+6PLlG4WR8OsM4GRP6p1jhcuCpaL/zNzjCmABxqsDPdWCchDheuitYLf2saO8ewq/wGV6/qeeUQLoiWC292hDPG/tHFk8WnaftFVzcqXBytF36x8wyxw94pdoDldN9CIlwarRd+4cI58dmZ8zCXpnk2n83JS9M0V3vywa6d5DYQw0AU/T0IEnpQeP/TBu7EQBylgSzMWtU7Q4GkSMnswBomswKEyfCwhYlsPPQwkQ4eU5QmcNdUWsFdU4kvc5jEDC7iShO4iCutfFvCBBYAT+I6nYv3Vyo7TyVMoOCaotTBNUVpB9cUpcIPNSxZ5eK3j8rKk68QChuvjrBUB6+Kn/eplgLgtilT+a2FJWrgiAtVcMSVGjjiQhUccaUGjrhQ5W/Ns3iKZQy4z/eZJu4Ub1QSbIVbZ9jbnQx8a0vUubhvaowd02vaXAd3/LMzw8zAi/FBxhrck4rEyT98hL3JZ/t2oBshCAQBdFYXOFRo//9r26SXxt5pTyMgJ/M+YUKWCa4f2MR+UhIWv9gNl5VrhNxSSU/xP+4apjViEZ/GM3EAEy9nnjerSgEWexkmfoA1YOLrqsibiR/Lm4mvqiZvJl46b8CwHe4WH/NmH8/K4SV+c0towmGBb4eb9QEJeF6dG1mPGV6duTmDVEaOlZf6EXccK8vqHCfcrN21IctDvqL24/1j4iRf1E94wrryR63l5Jly9fBBp8hL+ZfEzKDIb2Tkd8OINRws395tmMz55q9P51GWmRqeLMNkcALvmizmvfM4TXCNnfPBBZzMSzNXaCcedVDpLj5d+k4UdbkFiZd837JRwg21MqoiErsLiCKiapDWF7VUU8kwOPQMAAAAAElFTkSuQmCC"
+        alt="" class="scroll-to-top" onclick='window.scrollTo({top: 0, behavior: "smooth" })' />
+
+    <!-- <section class="overlay" aria-hidden="true" tabindex="-1">
+        <div>
+            <h2>Hello, I'm the overlayer</h2>
+
+            <p>
+                The internal div has the following style applied just to mimic a lot
+                of content
+            </p>
+
+            <pre><code>
+                <style>
+                    .overlay div {
+                        margin: 15vh auto;
+                        width: 80%;
+                        max-width: 650px;
+                        padding: 30px;
+                        min-height: 200vh;
+                        background: rgba(255,255,255, .95);
+                    }
+                </style>
+              </code></pre>
+
+            <p>The <code>.overlay</code> has a background applied</p>
+
+            <pre><code>
+                <style>
+                    .overlay div {
+                        background:  rgba(40,40,40, .75);
+                    }
+                </style>
+              
+            </code></pre>
+
+            <button type="button" class="close-overlay">CLOSE LAYER</button>
+        </div>
+    </section> -->
+</body>
+
+</html>

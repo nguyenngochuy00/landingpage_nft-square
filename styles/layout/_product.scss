@@ -1,0 +1,118 @@
+.main-container-content-product {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+
+    @media (max-width: 992px) {
+        display: flex;
+        width: 100%;
+    }
+
+    @media (max-width: 1024px) {
+        width: 100vw;
+    }
+
+    &-title {
+        font-size: 28px;
+        line-height: 32px;
+        font-weight: 700;
+        color: $text-color;
+        margin-bottom: 0.5rem;
+
+        @media (max-width: 1200px) {
+            font-size: 18px;
+            line-height: 21px;
+        }
+
+        @media (max-width: 992px) {
+            padding-left: 20px;
+        }
+
+        @media (max-width: 1024px) {
+            padding-left: 20px;
+        }
+    }
+
+    .image-slider {
+        width: 100%;
+        @media (max-width: 992px) {
+            width: 100vw !important;
+        }
+
+        .image-item {
+            .image {
+                .main-container-content-product-slide {
+                    width: 100%;
+                    border-radius: 24px;
+
+                    @media (max-width: 992px) {
+                        height: 150px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+
+    &-ntfBox,
+    &-digitalCollectibles,
+    &-tokenGated,
+    &-investment,
+    &-donation {
+        width: 100% !important;
+        margin-top: 1.75rem;
+        padding: 12px 24px 24px;
+        background-color: $main-color;
+        border-radius: 24px;
+
+        &-row1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100% !important;
+            margin-bottom: 20px;
+
+            &-title {
+                font-size: 28px;
+                line-height: 32px;
+                font-weight: 700;
+                color: $text-color;
+                margin-bottom: 0;
+
+                @media (max-width: 1200px) {
+                    font-size: 18px;
+                    line-height: 21px;
+                }
+            }
+
+            &-link {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                &-text {
+                    font-size: 18px;
+                    line-height: 21px;
+                    font-weight: 400;
+                    color: $text-color;
+                    margin-bottom: 0;
+
+                    @media (max-width: 1200px) {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                }
+
+                &-img {
+                    color: rgb(79, 79, 79);
+                    height: 12px;
+                    margin-left: 1rem;
+                }
+            }
+        }
+
+        &-row2 {
+        }
+    }
+}

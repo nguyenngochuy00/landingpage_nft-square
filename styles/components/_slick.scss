@@ -1,0 +1,13 @@
+.slick-prev,
+.slick-next {
+    z-index: 999;
+    display: block !important;
+}
+
+.slick-prev {
+    left: 12px !important;
+}
+
+.slick-next {
+    right: 12px !important;
+}

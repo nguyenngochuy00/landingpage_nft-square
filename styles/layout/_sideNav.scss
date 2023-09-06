@@ -1,0 +1,39 @@
+.main-container-sideNav {
+    display: none;
+    height: 100%;
+    width: 350px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    // background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 40px;
+
+    @media (max-width: 992px) {
+        display: block;
+        width: 0;
+    }
+
+    &-closeBtn {
+        position: absolute;
+        top: 20px;
+        left: 15px;
+        font-size: 36px;
+        margin-left: 10px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .main-container-content-sidebar-arrival {
+        border-radius: 0;
+    }
+    
+    .main-container-content-sidebar-shopProduct,
+    .main-container-content-sidebar-shopIndustry,
+    .main-container-content-sidebar-shopCountry {
+        margin-top: 0;
+        border-radius: 0;
+    }
+}

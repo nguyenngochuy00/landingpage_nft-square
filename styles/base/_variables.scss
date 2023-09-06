@@ -1,0 +1,14 @@
+$main-color: #070814;
+$text-color: rgb(255, 255, 255);
+$card-backgroundColor: linear-gradient(rgb(13, 13, 13) 0px, rgb(13, 13, 13) 0px) padding-box padding-box,
+    linear-gradient(
+            157.25deg,
+            rgba(151, 255, 223, 0.32) 1.26%,
+            rgba(10, 13, 36, 0.173) 59.29%,
+            rgba(151, 255, 223, 0.32) 99%
+        )
+        border-box border-box;
+$card-text-color: #a4a4a4;
+$card-footer-backgroundColor: rgba(255, 255, 255, 0.12);
+$card-footer-price-color: #00ffb0;
+$footer-text-color: #a5a5a5;

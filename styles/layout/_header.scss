@@ -1,0 +1,124 @@
+.header {
+    height: 78.6px !important;
+    background-color: $main-color;
+    border: 1px solid $main-color;
+    position: fixed;
+    z-index: 99;
+    width: 100vw !important;
+
+    @media (max-width: 992px) {
+        height: 42px !important;
+        padding: 0 1rem;
+    }
+
+    @media (max-width: 1024px) {
+        // height: 42px !important;
+        padding: 0 1rem;
+    }
+
+    &-container {
+        display: grid !important;
+        grid-template-columns: 3fr 9fr;
+        width: 100%;
+        grid-gap: 1.5rem;
+        align-items: center;
+
+        @media (max-width: 992px) {
+            display: flex !important;
+            justify-content: space-between;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        &-backBtn {
+            display: none;
+
+            @media (max-width: 992px) {
+                display: block;
+                cursor: pointer;
+                height: 14px;
+            }
+        }
+
+        &-left {
+            &-logo {
+                height: 40px !important;
+                width: 144px !important;
+
+                @media (max-width: 992px) {
+                    object-fit: contain;
+                    height: 26px !important;
+                    width: 94px !important;
+                }
+            }
+        }
+
+        &-right {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+
+            &-title {
+                font-size: 30px;
+                line-height: 36px;
+                font-weight: 500;
+                background: linear-gradient(94.61deg, #fd09c8 -2.1%, #1457ff 51.47%, #48d9a6 108.61%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                @media (max-width: 1200px) {
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+
+                @media (max-width: 992px) {
+                    display: none;
+                }
+            }
+
+            &-button {
+                border: 1px solid rgb(25, 57, 98);
+                padding: 5px 10px;
+                border-radius: 10px;
+
+                @media (max-width: 992px) {
+                    border: 0;
+                    padding: 0;
+                    border-radius: 0;
+                }
+
+                &-signIn {
+                    font-size: 18px;
+                    line-height: 21px;
+                    background-color: rgb(65 148 255);
+                    color: white;
+                    font-weight: 500;
+                    border-radius: 10px;
+                    border: 1px solid rgb(65 148 255);
+                    width: 100px;
+                    padding: 10px 20px;
+
+                    @media (max-width: 992px) {
+                        line-height: 14px;
+                        font-size: 12px;
+                        width: 65px;
+                        font-weight: 700;
+                        border-radius: 8px;
+                        padding: 5px 12px;
+                    }
+                }
+            }
+
+            &-sidebarBtn {
+                display: none;
+
+                @media (max-width: 992px) {
+                    display: block;
+                    margin-left: 0.75rem;
+                    height: 16px;
+                }
+            }
+        }
+    }
+}

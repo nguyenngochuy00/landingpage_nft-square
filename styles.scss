@@ -1,0 +1,22 @@
+@import "styles/base/variables";
+@import "styles/layout/header";
+@import "styles/layout/main";
+@import "styles/layout/content";
+@import "styles/layout/sidebar";
+@import "styles/layout/product";
+@import "styles/components/card";
+@import "styles/layout/footer";
+@import "styles/components/slick";
+@import "styles/components/scroll-to-top";
+@import "styles/layout/sideNav";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100% !important;
+    overflow-x: hidden;
+}
