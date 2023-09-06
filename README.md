@@ -1,0 +1,6 @@
+- Clone from web template: https://nft-square.io/all-product
+- Link web: https://landingpage-nft-square.netlify.app/
+- Link github: https://github.com/nguyenngochuy00/landingpage_nft-square
+- Technology: HTML, CSS, SCSS, JS
+- Framework: Bootstrap 5
+- Plugin JQuery: Slick
