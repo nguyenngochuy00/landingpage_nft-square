@@ -1,4 +1,4 @@
-- Link web: https://landingpage-nft-square.netlify.app/
+- Link web: https://landingpage-nft-square.vercel.app/
 - Link github: https://github.com/nguyenngochuy00/landingpage_nft-square
 - Technology: HTML, CSS, SCSS, JS
 - Framework: Bootstrap 5
